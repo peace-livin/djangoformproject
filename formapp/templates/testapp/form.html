@@ -1,9 +1,11 @@
-!DOCTYPE html>
+
 <html>
 <head>
     <title>Form</title>
 </head>
 <body>
+    
+    <h2>Employee Form</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
