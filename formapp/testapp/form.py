@@ -1,9 +1,9 @@
 from django import forms
 from django.core.validators import*
 class EmployeeForm(forms.Form):
-    ename = forms.CharField(max_length=100)
-    esal = forms.IntegerField()
-    add = forms.CharField(max_length=100)
+    ename = forms.CharField()
+    esal = forms.FloatField()
+    add = forms.CharField()
 
 
     def clean(self):
